@@ -3,7 +3,7 @@ const crypto = require("crypto");
 const Benchmark = require('benchmark');
 
 function randomString(size = 21) {  
-  return Crypto
+  return crypto
     .randomBytes(size)
     .toString('base64')
     .slice(0, size)
